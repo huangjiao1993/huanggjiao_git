@@ -1,0 +1,38 @@
+html {
+  background-color: #f0f2f5;
+}
+
+#root {
+  width: 1200px;
+  width: 100vw;
+  height: 100vh;
+}
+.page-content {
+  margin: 12px;
+  padding: 16px;
+  background: #fff;
+}
+button{
+    width: 90px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+} 
+.searchInput{
+  height: 40px;
+  border: 1px solid #D1D1D1;
+  background-color: #f0f0f0; 
+  svg{
+    color: #D1D1D1;
+    font-size: 18px;
+  }
+}
+.searchInput:hover {
+  border-color: #81C784; 
+}
+
+.ant-btn:not(:disabled):focus-visible {
+    outline: unset !important;
+}

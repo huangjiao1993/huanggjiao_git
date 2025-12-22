@@ -1,0 +1,294 @@
+.PermissionManage {
+
+  .title {
+    margin-bottom: 10px;
+  }
+
+  .vertical-line {
+    border-left: 1px solid #ECECEC;
+    height: 65px;
+  }
+
+  .PermissionManage-my {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .PermissionManage-my-title {
+    font-weight: 400;
+    font-size: 18px;
+    color: #0B0B0BD9;
+    font-family: 'PingFang SC';
+  }
+
+  .progressing {
+    margin-top: 22px;
+  }
+  .progressCard,
+  .historyCard {
+    border-left-style: solid;
+    border-left-width: 6px;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    margin-bottom: 30px;
+    min-height: 116px;
+
+    .progressCard-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      .tagRow {
+        display: flex;
+        .ant-tag {
+          height: 22px;
+          min-width: 50px;
+          max-width: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .circle-tag .circle {
+          display: inline-block;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background-color: currentColor;
+          margin-right: 5px;
+          border: none;
+        }
+      }
+
+      .detailInfor {
+        margin: 10px 0;
+        height: 22px;
+      }
+      .productType {
+        display: flex;
+        .anticon-double-right{
+              padding: 0px 15px;
+              color: #919191;
+        }
+        .product{
+           color:#7B88BD
+        }
+      }
+      .time {
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .operate {
+
+        button,
+        a {
+          float: right;
+        }
+
+        button {
+          position: relative;
+          left: 8px;
+        }
+
+        .anterLive {
+          background: #2B4096;
+        }
+
+        .ant-btn-circle {
+          background: #E6E8F0;
+          border: 0;
+          margin-left: 15px
+        }
+
+        .ant-btn-circle svg {
+          font-size: 18px;
+        }
+
+        .ant-btn-circle:hover {
+          color: #2B4096;
+        }
+      }
+    }
+
+    .ant-divider {
+      height: 64px;
+    }
+  }
+
+  .progressCard {
+    .ant-card-body {
+      padding: 12px 30px 15px 10px;
+
+      .progressCard-row {
+        .detailInfor {
+          margin: 10px 0;
+          height: 22px;
+        }
+        .time {
+          div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+
+        .operate {
+
+          button,
+          a {
+            float: right;
+          }
+
+          .anterLive {
+            background: #2B4096;
+          }
+
+          .ant-btn-circle {
+            background: #E6E8F0;
+            border: 0;
+            margin-left: 10px
+          }
+
+          .ant-btn-circle svg {
+            font-size: 18px;
+          }
+
+          .ant-btn-circle:hover {
+            color: #2B4096;
+          }
+        }
+      }
+
+      .ant-divider {
+        height: 64px;
+      }
+    }
+  }
+
+  .detailInfor {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    .column-overflow__hidden {
+      font-size: 18px;
+    }
+  }
+
+  .ant-descriptions-row {
+    display: flex
+  }
+
+  .HistoryData {
+    .ant-collapse {
+      margin-bottom: 5px;
+    }
+  }
+
+  .custom-collapse-panel {
+    margin-bottom: 16px;
+  }
+
+  .circle {
+    width: 24px;
+    height: 14px;
+    -webkit-border-radius: 100px / 100px;
+    -moz-border-radius: 100px / 100px;
+    border-radius: 100px / 100px;
+    border: 1px solid #B5B5B5;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .circle .CaretDown {
+    width: 10px;
+    height: 4px;
+    position: absolute;
+    top: -4.5px;
+    left: 4px;
+    color: #B5B5B5;
+  }
+
+  .circle .CaretRight {
+    position: absolute;
+    top: -5px;
+    left: 4.5px;
+    color: #B5B5B5;
+  }
+
+  .historyCard {
+    margin-bottom: 10px;
+    .ant-table-wrapper .ant-table-tbody .ant-table-row>.ant-table-cell-row-hover {
+      background: #ECECEC;
+    }
+
+    .ant-table-wrapper .ant-table-cell,
+    .ant-table-wrapper .ant-table-thead>tr>th,
+    .ant-table-wrapper .ant-table-tbody>tr>th,
+    .ant-table-wrapper .ant-table-tbody>tr>td,
+    .ant-table-wrapper tfoot>tr>th,
+    .ant-table-wrapper tfoot>tr>td {
+      padding: 10px;
+    }
+
+    .ant-table-wrapper .ant-table-tbody>tr>th,
+    .ant-table-wrapper .ant-table-tbody>tr>td {
+      border-bottom: 1px solid #ECECEC;
+    }
+
+    .custom-row:first-of-type {
+      td {
+        border-top: 1px solid #ECECEC;
+      }
+    }
+
+    .custom-row-height {
+      height: 50px;
+      /* 设置行高 */
+      line-height: 50px;
+      /* 设置行内文本的行高，使其垂直居中 */
+    }
+
+    .ant-table-thead>tr>th {
+      display: none;
+      /* 隐藏表头 */
+    }
+
+    .HistoryTable {
+      padding: 10px 15px 0px 39px;
+    }
+
+    .HistoryTable .rowTime {
+      span {
+        margin-right: 5px;
+      }
+
+      .anticon-minus {
+        margin: 0 5px;
+      }
+
+      .timeItem {
+        margin-right: 10px;
+        color: #9E9E9E;
+      }
+    }
+
+    .HistoryTable>.anticon-more>svg {
+      font-size: 16px;
+    }
+
+    .collapseHistroy {
+      display: flex;
+      align-items: center;
+      margin-right: 15px;
+      margin-top: 5px;
+    }
+
+      display: flex;
+  }
+}
+.ant-avatar-image {
+    margin-right: 5px;
+}
