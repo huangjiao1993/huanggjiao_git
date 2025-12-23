@@ -5,12 +5,10 @@ import PermissionManage from '@/components/PermissionManage/Index';
 import './style.css';
 
 const BasicLayout = ({ route, children }) => (
-  // <Layout className="main-layout">
   <>
        <MainHeader />
        <PermissionManage/>
        </>
-  // </Layout>
 );
 
 export default BasicLayout;
