@@ -1,5 +1,5 @@
 // src/Home.jsx
-import {Input, Card } from 'antd';
+import { Input, Card} from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 import HistoryTable from '@/components/PermissionManage/HistoryTable';
 import StatusOption from '@/components/PermissionManage/StatusOption';
